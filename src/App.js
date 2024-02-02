@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header/Header";
+import Posts from "./components/Posts/Posts";
+import AdminAddItem from "./components/AdminInput/AdminAddItem";
+import Adv from "./components/AdvCentral/Adv";
+import { AppContainer } from './AppStyles.ts'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+    const Context = React.createContext({});
+    return (
+        <Context.Provider value={context}>
+            <AppContainer>
+                <Header/>
+                <AdminAddItem />
+                <Posts title = 'Список товаров 1'/>
+                <Adv/>
+            </AppContainer>
+        </Context.Provider>
+    );
 }
 
 export default App;
