@@ -7,16 +7,14 @@ import { AppContainer } from './AppStyles.ts'
 
 function App() {
 
-    const Context = React.createContext({});
+    // const Context = React.createContext({});
     return (
-        <Context.Provider value={context}>
             <AppContainer>
                 <Header/>
                 <AdminAddItem />
                 <Posts title = 'Список товаров 1'/>
                 <Adv/>
             </AppContainer>
-        </Context.Provider>
     );
 }
 

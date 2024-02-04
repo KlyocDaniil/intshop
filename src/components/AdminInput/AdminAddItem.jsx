@@ -9,7 +9,7 @@ const AdminAddItem = () => {
     const [items, setItems] = useState([])
     const [api, contextHolder] = notification.useNotification();
 
-    const context = React.useContext(Context);
+    // const context = React.useContext(Context);
 
     //контекст
 
