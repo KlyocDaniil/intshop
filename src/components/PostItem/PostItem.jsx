@@ -17,7 +17,7 @@ const PostItem = ( props ) => {
         }
     }
 
-    if (!props.product) return undefined;
+    // if (!props.product) return undefined;
 
     return (
 
